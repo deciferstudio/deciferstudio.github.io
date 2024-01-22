@@ -289,6 +289,12 @@ color: #1e1e1f;
     overflow: scroll;
 }
 
+#landing-body-div {
+    font-size: 120%;
+}
+
+
+
 /* desktop */
 @media only screen and (min-width: 768px) {
     #content{
@@ -400,6 +406,11 @@ color: #1e1e1f;
         justify-content: center;
     }
 
+    .home-img {
+    width: 80%;
+    margin-left: 10%;
+}
+
     .device{
         height: 100%;
         width: 100%;
@@ -418,9 +429,8 @@ color: #1e1e1f;
     }
 
     .titles{
-        font-size: 350%;
-        width: 100%;
-        text-align: left;
+        font-size: 220%;
+/*        width: 100%;*/
         z-index: 10;
 
     }
@@ -436,7 +446,7 @@ color: #1e1e1f;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 10%;
+        padding-bottom:0%;
     }    
 
     .info-content{
