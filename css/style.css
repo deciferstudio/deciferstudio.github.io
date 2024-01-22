@@ -1,0 +1,493 @@
+:root {
+  --bg-color: #E6E6DE;
+  --main-green: #20E864;
+  --main-blue: #2251F8;
+  --main-red: #EE4813;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:rgba(137, 137, 137, 1) 
+}
+
+button{
+    color: black;
+}
+
+.titles{
+    font-family: 'Lexend Deca', sans-serif;
+/*    color:#cbff70;*/
+color: var(--main-blue);
+/*    color: #1e1e1f;*/
+/*    background: white;*/
+}
+
+.header{
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+
+.home-img {
+    width: 50%;
+/*    height: 100px;*/
+    margin-left: 25%;
+    border: 7px solid;
+    border-image: linear-gradient(45deg, gold, deeppink) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rorate(360deg);
+    }
+}
+
+
+.subtitles{
+/*    font-family: 'JetBrains Mono', monospace;*/
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+}
+
+.subtitle{
+    padding: 1vh 0;
+    color: #b5e0ff;
+    margin: 0 5%;
+}
+
+.subtitle:hover{
+    color: #8cbadb;
+}
+
+.subtitle.selected{
+    color: #5d8cae;;
+}
+
+#title-div{
+    position: absolute;
+    z-index: 10;
+}
+
+.info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landing-body-div{
+    padding-top: 1vh;
+/*    font-family: 'JetBrains Mono', monospace;*/
+font-family: "Lexend Deca", sans-serif;
+/*    color: white;*/
+color: #1e1e1f;
+    font-size: 170%;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+#landing-body-div a {
+/*    color: #cbff70;*/
+color: var(--main-blue);
+    border-bottom: 1px dotted #cbff70;
+    border-bottom: 1px dotted var(--main-blue);
+}
+
+#header-div {
+    padding-top: 1vh;
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    font-size: 240%;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+#get-started-title{
+    margin-top: 7vh;
+    width: 100%;
+    text-align: center;
+}
+
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100dvh;
+/*    font-family: Helvetica Neue, Arial, sans-serif;*/
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+    touch-action: manipulation;
+/*    background: #1e1e1f;*/
+background: var(--bg-color);
+color: #1e1e1f;
+/*    background: url('../images/empty_background.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;*/
+}
+
+#content{
+    width: 100vw;
+    height: 100dvh;
+    position: absolute;
+    z-index: 0;
+}
+
+#info-column{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+#device-column{
+    display: flex;
+    align-items: center;
+}
+
+#info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.1s ease-in-out;
+    border: 3px solid black;
+    padding-bottom: 8%;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    border-radius: 5% 5% 0 0;
+    transition: top 0.2s ease-in-out;
+    pointer-events: auto; 
+}
+
+.info-row{
+    margin-bottom:3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    font-size: 120%;
+}
+
+.bar{
+    border: 2px solid black;
+    display: flex;
+    justify-content: left;
+    width: 65%;
+
+    border-radius: 30px;
+}
+
+.bar-fill{
+    background-color: var(--main-red);
+    width: 3%;
+    border-radius: 30px;
+}
+
+.device{
+    position: relative;
+    overflow: hidden;
+    max-width: 414px;
+    max-height: 881px;
+    z-index: 1;
+/*    background-image: url('../images/empty_background.png');*/
+}
+
+#device-screen{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.post{
+    width: 100%;
+    height: 100%;
+}
+
+.message-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.message-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.message-title{
+    font-size: 280%;
+    padding-bottom: 10%;
+    margin: 0 5%;
+}
+
+@media only screen and (max-width: 770px) {
+    .message-title {
+        margin-left: 5%;
+    }
+}
+.message-subtitle{
+    font-size: 225%;
+}
+
+.message-body{
+    font-size: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 4% 10%;
+    margin-left: 2%;
+}
+
+.message-body br{
+    margin-top: 3%;
+}
+
+.smaller-title{
+    font-size: 70%;
+    line-height: 0%;
+}
+
+.smaller-text{
+    font-size: 80%;
+}
+
+
+
+
+#landing-body{
+    overflow: scroll;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    #content{
+        display: flex;
+        justify-content: center;
+    }
+
+    #device-column{
+        width: 100vw;
+        height: 100dvh;
+        justify-content: center;
+    }
+
+    .device{
+        height: 90%;
+        width: auto;
+        aspect-ratio: 18 / 39;  /* Based off of iPhone device dimension, 19.5:9 */
+        border: 7px solid black;
+        border-radius: 45px;
+    }
+
+    @supports not (height: 100dvh) {
+        #device-column{
+            height: 100vh;
+        }
+
+        .intro-page{
+            height: 80vh;
+        }
+    }
+
+    @supports not (aspect-ratio: 18 / 39) {
+        .device{
+            height: 90%;
+            width: 43%;
+        }
+
+        #landing-device-section{
+            height: 485px;
+            width: 231px;
+        }
+
+        #landing-device{
+            width: 100%;
+        }
+    }
+
+    .intro-title{
+        margin-top: 70%;
+    }
+
+    .welcome-title{
+        margin-top: 20%;
+    }
+
+    #top-intro-pararaph{
+        margin-top: 40%;
+    }
+
+    .titles{
+        font-size: 420%;
+    }
+
+    .headers{
+        font-size: 400%;
+    }
+
+    #title-div{
+        padding: 10px 20px;
+    }   
+    
+    #landing-body-div{
+        width: 58%;
+        margin-bottom: 2%;
+    }
+
+    .info-content{
+        padding-top: 10vh;
+    }
+
+    #landing-device{  
+        filter: drop-shadow(0px 0px 10px #ffffff);
+        cursor: pointer;
+        height: 100%;
+    }
+
+    #landing-device-section{
+        padding-left: 5%;
+        max-height: 70vh;
+    }
+
+    #info-body{
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    #get-started-title{
+        margin-bottom: 5vh;
+        line-height: 1;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    #device-column{
+        width: 100vw;
+        height: 100dvh;
+        justify-content: center;
+    }
+
+    .device{
+        height: 100%;
+        width: 100%;
+    }
+
+    .intro-title{
+        margin-top: 50%;
+    }
+
+    .welcome-title{
+        margin-top: 0%;
+    }
+
+    #top-intro-pararaph{
+        margin-top: 20%;
+    }
+
+    .titles{
+        font-size: 350%;
+        width: 100%;
+        text-align: left;
+        z-index: 10;
+
+    }
+
+    #title-div{
+        font-size: 240%;
+        padding-top: 15px;
+        text-shadow: 2px 2px 3px #282828;
+    }
+    
+    #info-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }    
+
+    .info-content{
+        padding-top: 6vh;
+    }
+
+    #landing-body-div{
+        padding: 7%;
+    }
+
+    #landing-device{
+        filter: drop-shadow(0px 0px 10px #ffffff);
+        width: 80%;
+        height: auto;
+        aspect-ratio: 18 / 39;  /* Based off of iPhone device dimension, 19.5:9 */
+        border: 7px solid black;
+        border-radius: 45px;
+        margin: auto;
+    }
+
+    #get-started-title{
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .subtitles{
+        flex-wrap: wrap;
+    }
+
+    #landing-device-section{
+        width: 100%;
+    }
+
+    #start-arrow{
+        display: none;
+    }
+
+    .alg-card {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin: 0 5% 2% 5%;
+    }
+
+    .interest-selection2{
+        padding: 1%;
+        width: 26%;
+    }
+
+    .alg-select-weightings{
+        font-size: 80%;
+    }
+}
+
+
