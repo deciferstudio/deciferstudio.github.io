@@ -24,8 +24,10 @@ button{
 /*    color:#cbff70;*/
 color: var(--main-blue);
 /*    color: #1e1e1f;*/
-/*    background: white;*/
+
 }
+
+   
 
 .header{
     font-family: 'Lexend Deca', sans-serif;
