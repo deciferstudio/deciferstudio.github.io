@@ -1,7 +1,8 @@
 :root {
   --bg-color: #E6E6DE;
   --main-green: #20E864;
-  --main-blue: #2251F8;
+/*  --main-blue: #2251F8;*/
+--main-blue:#0600FE;
   --main-red: #EE4813;
 }
   @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
@@ -20,7 +21,8 @@ button{
 }
 
 .titles{
-    font-family: 'Lexend Deca', sans-serif;
+/*    font-family: 'Lexend Deca', sans-serif;*/
+font-family: 'Futura', sans-serif;
 /*    color:#cbff70;*/
 color: var(--main-blue);
 /*    color: #1e1e1f;*/
