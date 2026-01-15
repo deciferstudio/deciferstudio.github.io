@@ -36,8 +36,10 @@ color: var(--main-blue);
 }
 
 
+
 .home-img {
     width: 100%;
+
 
     border: 7px solid;
 
@@ -134,7 +136,8 @@ color: #1e1e1f;
 
 .home-img {
   width: 100%;
-  height: auto;
+/*  height: auto;*/
+height: 75%;
   display: block;
 }
 
